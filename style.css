@@ -1,0 +1,207 @@
+*{
+
+/*Cores Tema e fontes*/
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "MuseoModerno", cursive;
+}
+
+:root{
+    --text-color: #000000;
+    --bg-color: #e5e5e5;
+    --second-color: #fff;
+    --big-font: 4.5rem;
+    --p-font: 1rem;
+    --main-color: #f29494;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/*Cabeçalho*/
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 9%;
+    transition: ease all .55s;
+}
+
+/*Mainimg logo*/
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo i{
+    vertical-align: middle;
+    color: var(--main-color);
+    font-size: 35px;
+    margin-right: 5px;
+}
+
+.Links{
+    display: flex;
+}
+
+.Links a{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0 35px;
+    transition: all ease .55s;
+}
+
+.Links a:hover{
+    color: var(--main-color);
+}
+
+.Links a.active{
+    color: var(--main-color);
+}
+
+.h-main{
+    display: flex;
+    align-items: center;
+}
+
+.h-btn{
+    display:inline-block;
+    color: var(--bg-color);
+    background: var(--main-color);
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    margin-right: 20px;
+    transition: all .55s;
+}
+
+.h-btn:hover{
+background: transparent;
+border: 2px solid var(--text-color);
+color: var(--text-color);
+}
+
+#menu-icon{
+    font-size: 40px;
+    z-index: 1001;
+    cursor: pointer;
+    margin: 15px;
+    display: none;
+}
+
+#darkmode{
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--text-color);
+    margin-left: 10px;
+}
+
+section{
+    padding: 10% 12%;
+}
+
+section.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*Configurações de Imagens*/
+
+.main-img{
+    height: 500px;
+    width: 500;
+}
+
+.main-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-in{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+
+}
+
+.main-text h1{
+    font-size: var(--big-font);
+    font-weight: 800;
+}
+
+.main-text h4{
+    margin: 5px 0 20px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.main-text p{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 26px;
+    max-width: 550px;
+    margin-bottom: 4rem;
+}
+
+.box{
+    background: var(--second-color);
+    padding:25px 40px;
+    border-radius: 1rem;
+    transition: all ease.55s;
+    box-shadow: rgba(33,35,38,0.1) 0px 10px 10px -10px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.box:hover{
+    transform: translateY(-5px) scale(1.1);
+}
+
+.box img{
+    max-width: 100%;
+    height: auto;
+}
+
+.box h3{
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.box h5{
+   color: var(--main-color);
+   font-size: 15px;
+   font-weight: 400;
+   letter-spacing: 4px;
+}
+
